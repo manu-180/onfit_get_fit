@@ -41,13 +41,7 @@ export default function Preloader({ onDone }: PreloaderProps) {
         width={100}
         height={100}
         priority
-        style={{
-          width: "clamp(60px,12vw,100px)",
-          height: "auto",
-          marginBottom: "1.5rem",
-          opacity: 0,
-          animation: "fi .5s ease .2s forwards",
-        }}
+        className="PL-logo-img"
       />
       <div className="PL-logo">
         {"ONFIT".split("").map((c, i) => (

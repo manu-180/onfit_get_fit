@@ -18,6 +18,7 @@ a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;backgroun
 .PL-bar{width:clamp(200px,40vw,400px);height:2px;background:var(--g8);margin-top:2rem;border-radius:2px;overflow:hidden}
 .PL-fill{height:100%;background:var(--lm);border-radius:2px;box-shadow:0 0 12px var(--lgm);transition:width .3s}
 .PL-tag{font-size:clamp(.6rem,1vw,.75rem);text-transform:uppercase;letter-spacing:.3em;color:var(--g5);margin-top:1.5rem;opacity:0;animation:fi .5s ease .8s forwards}
+.PL-logo-img{width:clamp(60px,12vw,100px);height:clamp(60px,12vw,100px);object-fit:contain;margin-bottom:clamp(1rem,2vw,1.5rem);opacity:0;animation:fi .5s ease .2s forwards}
 @keyframes fi{to{opacity:1}}
 
 /* NAVBAR */
