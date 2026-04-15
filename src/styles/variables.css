@@ -1,0 +1,24 @@
+:root {
+  --bg: #0A0A0A;
+  --bg1: #111;
+  --bg2: #141414;
+  --g9: #1E1E1E;
+  --g8: #2A2A2A;
+  --g7: #3A3A3A;
+  --g6: #555;
+  --g5: #777;
+  --g4: #999;
+  --g3: #BBB;
+  --wh: #F5F5F0;
+  --lm: #C8F731;
+  --ld: #A8D426;
+  --ll: #D4FF4A;
+  --lg: rgba(200, 247, 49, 0.15);
+  --lgm: rgba(200, 247, 49, 0.25);
+  --lgl: rgba(200, 247, 49, 0.4);
+  --fd: var(--font-bebas), "Impact", sans-serif;
+  --fb: var(--font-barlow), "Helvetica Neue", sans-serif;
+  --eo: cubic-bezier(0.16, 1, 0.3, 1);
+  --gb: rgba(10, 10, 10, 0.85);
+  --gbl: 20px;
+}
