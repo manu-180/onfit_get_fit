@@ -21,17 +21,8 @@ export const heroStats = [
   { v: "98%", l: "Satisfacción" },
 ] as const;
 
-export type DiffIconId =
-  | "flame"
-  | "target"
-  | "zap"
-  | "dumbbell"
-  | "dna"
-  | "users";
-
 export type DiffCard = {
   n: string;
-  icon: DiffIconId;
   t: string;
   d: string;
 };
@@ -39,37 +30,31 @@ export type DiffCard = {
 export const diffCards: readonly DiffCard[] = [
   {
     n: "01",
-    icon: "flame",
     t: "Clases de 45 Min",
     d: "Entrenamientos intensos diseñados para maximizar resultados en menos tiempo.",
   },
   {
     n: "02",
-    icon: "target",
     t: "Coaching 1:1",
     d: "Plan personalizado. Coaches que te guían y empujan a tu máximo potencial.",
   },
   {
     n: "03",
-    icon: "zap",
     t: "Tecnología Integrada",
     d: "Heart rate tracking, métricas de progreso y datos que impulsan resultados.",
   },
   {
     n: "04",
-    icon: "dumbbell",
     t: "Equipamiento Premium",
     d: "Lo último en máquinas y equipamiento funcional para atletas exigentes.",
   },
   {
     n: "05",
-    icon: "dna",
     t: "Recovery Zone",
     d: "Sauna, crioterapia y stretching. La recuperación es clave.",
   },
   {
     n: "06",
-    icon: "users",
     t: "Comunidad Elite",
     d: "Eventos, challenges mensuales y una red de personas con tu visión.",
   },
@@ -375,7 +360,7 @@ export const galleryItems: GalleryItem[] = [
   { src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80", lb: "Peso Libre", sp: "" },
   { src: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80", lb: "Cardio Zone", sp: "" },
   { src: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80", lb: "Boxing Ring", sp: "" },
-  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80", lb: "Recovery", sp: "" },
+  { src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80", lb: "Recovery", sp: "" },
   { src: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80", lb: "Entrenamiento", sp: "gw" },
 ];
 

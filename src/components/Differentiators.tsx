@@ -1,26 +1,7 @@
 "use client";
 
-import {
-  Dna,
-  Dumbbell,
-  Flame,
-  Target,
-  Users,
-  Zap,
-  type LucideIcon,
-} from "lucide-react";
 import { AnimatedCounter, useReveal } from "@/lib/hooks";
-import type { DiffIconId } from "@/lib/data";
 import { diffCards, diffCounterStats } from "@/lib/data";
-
-const DIFF_ICONS: Record<DiffIconId, LucideIcon> = {
-  flame: Flame,
-  target: Target,
-  zap: Zap,
-  dumbbell: Dumbbell,
-  dna: Dna,
-  users: Users,
-};
 
 export default function Differentiators() {
   const [headRef, headVis] = useReveal();
@@ -42,29 +23,23 @@ export default function Differentiators() {
           </h2>
         </div>
         <div ref={gridRef} className="dg">
-          {diffCards.map((c, i) => {
-            const Icon = DIFF_ICONS[c.icon];
-            return (
-              <article
-                key={c.n}
-                className="dc"
-                style={{
-                  opacity: gridVis ? 1 : 0,
-                  transform: gridVis ? "translateY(0)" : "translateY(25px)",
-                  transition: `opacity .6s var(--eo) ${gridVis ? i * 0.08 : 0}s, transform .6s var(--eo) ${gridVis ? i * 0.08 : 0}s`,
-                }}
-              >
-                <div className="dn" aria-hidden>
-                  {c.n}
-                </div>
-                <div className="di" aria-hidden>
-                  <Icon className="di-svg" strokeWidth={1.65} focusable="false" />
-                </div>
-                <h3 className="dt">{c.t}</h3>
-                <p className="dd">{c.d}</p>
-              </article>
-            );
-          })}
+          {diffCards.map((c, i) => (
+            <article
+              key={c.n}
+              className="dc"
+              style={{
+                opacity: gridVis ? 1 : 0,
+                transform: gridVis ? "translateY(0)" : "translateY(25px)",
+                transition: `opacity .6s var(--eo) ${gridVis ? i * 0.08 : 0}s, transform .6s var(--eo) ${gridVis ? i * 0.08 : 0}s`,
+              }}
+            >
+              <div className="dn" aria-hidden>
+                {c.n}
+              </div>
+              <h3 className="dt">{c.t}</h3>
+              <p className="dd">{c.d}</p>
+            </article>
+          ))}
         </div>
         <div ref={cnRef} className={`CN rv ${cnVis ? "v" : ""}`}>
           {diffCounterStats.map((c, i) => (
