@@ -1,7 +1,6 @@
 "use client";
 
 import { useReveal } from "@/lib/hooks";
-import { ctaTrust } from "@/lib/data";
 
 export default function CTA() {
   const [ref, visible] = useReveal(0.1);
@@ -48,14 +47,6 @@ export default function CTA() {
           <button type="button" className="CT-bs2">
             Hablar por WhatsApp
           </button>
-        </div>
-        <div className="CT-tr">
-          {ctaTrust.map(([ic, tx], i) => (
-            <span key={i} className="CT-ti">
-              <span>{ic}</span>
-              {tx}
-            </span>
-          ))}
         </div>
       </div>
     </section>

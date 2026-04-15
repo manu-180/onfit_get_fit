@@ -293,8 +293,6 @@ a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;backgroun
 .CT-bm:hover{background:var(--ll);box-shadow:0 0 45px var(--lgl);transform:translateY(-3px) scale(1.02)}
 .CT-bm::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transition:left .6s}.CT-bm:hover::before{left:100%}
 .CT-bs2{padding:clamp(.85rem,1.2vw,1.05rem) clamp(1.8rem,3.5vw,2.8rem);font-weight:700;font-size:clamp(.72rem,.92vw,.85rem);text-transform:uppercase;letter-spacing:.12em;background:transparent;color:var(--wh);border:1px solid var(--g6);border-radius:4px;transition:all .4s var(--eo)}.CT-bs2:hover{border-color:var(--lm);color:var(--lm);box-shadow:0 0 18px var(--lg)}
-.CT-tr{display:flex;align-items:center;justify-content:center;gap:clamp(1.2rem,2.5vw,2.2rem);flex-wrap:wrap}
-.CT-ti{display:flex;align-items:center;gap:.35rem;font-size:clamp(.55rem,.68vw,.62rem);font-weight:500;color:var(--g5);text-transform:uppercase;letter-spacing:.05em}
 
 /* FOOTER */
 .FT{background:var(--bg);border-top:1px solid var(--g8)}

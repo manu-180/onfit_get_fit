@@ -439,12 +439,6 @@ export const pricingGuarantees: [string, string][] = [
   ["⚡", "Activación inmediata"],
 ];
 
-export const ctaTrust: [string, string][] = [
-  ["🛡️", "Sin compromiso"],
-  ["⏱️", "Reservá en 30 seg"],
-  ["🎯", "+500 ya lo hicieron"],
-];
-
 export const footerNav = [
   "Programas",
   "Coaches",
